@@ -12,7 +12,7 @@ pub fn build(b: *std.build.Builder) void {
     // between Debug, ReleaseSafe, ReleaseFast, and ReleaseSmall.
     const mode = b.standardReleaseOptions();
     
-    //NOTE(Sevag):set this path to where you have installed
+    //NOTE(Sev):set this path to where you have installed
     //            the SDL2 libraries.
     const sdl_path = "d:\\w\\sdk\\SDL2-2.0.14\\";
 
