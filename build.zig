@@ -12,13 +12,17 @@ pub fn build(b: *std.build.Builder) void {
     // between Debug, ReleaseSafe, ReleaseFast, and ReleaseSmall.
     const mode = b.standardReleaseOptions();
     
-    //NOTE(Sev):set this path to where you have installed
-    //            the SDL2 libraries.
+    //NOTE(sev):set this path to where you have installed
+    //          the SDL2 libraries.
     const sdl_path = "d:\\w\\sdk\\SDL2-2.0.14\\";
 
     const exe = b.addExecutable("SDLDemo", "src/main.zig");
     exe.setTarget(target);
-    exe.subsystem = .Windows;
+    
+    if(target.isWindows()) {
+        exe.subsystem = .Windows;
+    }
+    
     exe.setBuildMode(mode);
 
     exe.addIncludeDir(sdl_path ++ "Include");
