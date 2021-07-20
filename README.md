@@ -1,4 +1,4 @@
-#Zig SDL2 Demo
+# Zig SDL2 Demo
 
 This demo is made possible by following an article written by Fabio Arnold
 
@@ -8,7 +8,7 @@ https://dev.to/fabioarnold/setup-zig-for-gamedev-2bmf
 It is designed to be built on Windows OS, but a simple edit of the Build.zig file should make it possible to build on Linux.
 
 
-#Building
+# Building
 
 Built using zig version 0.9.0-dev.463+3e8394776
 
